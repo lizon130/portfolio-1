@@ -1,0 +1,2267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Portfolio-X - Index</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- fontAwesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <style>
+        #header {
+          background: white;
+          transition: all 0.5s;
+          z-index: 997;
+          padding: 20px 0;
+        }
+
+        #header.header-scrolled {
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          padding: 12px 0;
+        }
+
+        #header.header-inner-pages {
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #header .logo {
+          font-size: 28px;
+          margin: 0;
+          padding: 0;
+          line-height: 1;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        #header .logo a {
+          color: #556270;
+        }
+
+        #header .logo img {
+          max-height: 40px;
+        }
+
+        /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+        /**
+* Desktop Navigation 
+*/
+        .navbar {
+          padding: 0;
+        }
+
+        .navbar ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          list-style: none;
+          align-items: center;
+        }
+
+        .navbar li {
+          position: relative;
+        }
+
+        .navbar a,
+        .navbar a:focus {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 0 10px 30px;
+          font-family: "Poppins", sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          color: #556270;
+          white-space: nowrap;
+          transition: 0.3s;
+        }
+
+        .navbar a i,
+        .navbar a:focus i {
+          font-size: 12px;
+          line-height: 0;
+          margin-left: 5px;
+        }
+
+        .navbar a:hover,
+        .navbar .active,
+        .navbar .active:focus,
+        .navbar li:hover > a {
+          color: #d9232d;
+        }
+
+        .navbar .getstarted,
+        .navbar .getstarted:focus {
+          background: #d9232d;
+          padding: 8px 25px;
+          margin-left: 30px;
+          border-radius: 4px;
+          font-weight: 400;
+          color: #fff;
+        }
+
+        .navbar .getstarted:hover,
+        .navbar .getstarted:focus:hover {
+          color: #fff;
+          background: #e1444d;
+        }
+
+        .navbar .dropdown ul {
+          display: block;
+          position: absolute;
+          left: 14px;
+          top: calc(100% + 30px);
+          margin: 0;
+          padding: 10px 0;
+          z-index: 99;
+          opacity: 0;
+          visibility: hidden;
+          background: #fff;
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          transition: 0.3s;
+        }
+
+        .navbar .dropdown ul li {
+          min-width: 200px;
+        }
+
+        .navbar .dropdown ul a {
+          padding: 10px 20px;
+          font-size: 15px;
+          text-transform: none;
+          font-weight: 400;
+        }
+
+        .navbar .dropdown ul a i {
+          font-size: 12px;
+        }
+
+        .navbar .dropdown ul a:hover,
+        .navbar .dropdown ul .active:hover,
+        .navbar .dropdown ul li:hover > a {
+          color: #d9232d;
+        }
+
+        .navbar .dropdown:hover > ul {
+          opacity: 1;
+          top: 100%;
+          visibility: visible;
+        }
+
+        .navbar .dropdown .dropdown ul {
+          top: 0;
+          left: calc(100% - 30px);
+          visibility: hidden;
+        }
+
+        .navbar .dropdown .dropdown:hover > ul {
+          opacity: 1;
+          top: 0;
+          left: 100%;
+          visibility: visible;
+        }
+
+        @media (max-width: 1366px) {
+          .navbar .dropdown .dropdown ul {
+            left: -90%;
+          }
+
+          .navbar .dropdown .dropdown:hover > ul {
+            left: -100%;
+          }
+        }
+
+        /**
+* Mobile Navigation 
+*/
+        .mobile-nav-toggle {
+          color: #556270;
+          font-size: 28px;
+          cursor: pointer;
+          display: none;
+          line-height: 0;
+          transition: 0.5s;
+        }
+
+        .mobile-nav-toggle.bi-x {
+          color: #fff;
+        }
+
+        @media (max-width: 991px) {
+          .mobile-nav-toggle {
+            display: block;
+          }
+
+          .navbar ul {
+            display: none;
+          }
+        }
+
+        .navbar-mobile {
+          position: fixed;
+          overflow: hidden;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: rgba(63, 73, 83, 0.9);
+          transition: 0.3s;
+          z-index: 999;
+        }
+
+        .navbar-mobile .mobile-nav-toggle {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+        }
+
+        .navbar-mobile ul {
+          display: block;
+          position: absolute;
+          top: 55px;
+          right: 15px;
+          bottom: 15px;
+          left: 15px;
+          padding: 10px 0;
+          background-color: #fff;
+          overflow-y: auto;
+          transition: 0.3s;
+        }
+
+        .navbar-mobile a,
+        .navbar-mobile a:focus {
+          padding: 10px 20px;
+          font-size: 15px;
+          color: #556270;
+        }
+
+        .navbar-mobile a:hover,
+        .navbar-mobile .active,
+        .navbar-mobile li:hover > a {
+          color: #d9232d;
+        }
+
+        .navbar-mobile .getstarted,
+        .navbar-mobile .getstarted:focus {
+          margin: 15px;
+        }
+
+        .navbar-mobile .dropdown ul {
+          position: static;
+          display: none;
+          margin: 10px 20px;
+          padding: 10px 0;
+          z-index: 99;
+          opacity: 1;
+          visibility: visible;
+          background: #fff;
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        }
+
+        .navbar-mobile .dropdown ul li {
+          min-width: 200px;
+        }
+
+        .navbar-mobile .dropdown ul a {
+          padding: 10px 20px;
+        }
+
+        .navbar-mobile .dropdown ul a i {
+          font-size: 12px;
+        }
+
+        .navbar-mobile .dropdown ul a:hover,
+        .navbar-mobile .dropdown ul .active:hover,
+        .navbar-mobile .dropdown ul li:hover > a {
+          color: #d9232d;
+        }
+
+        .navbar-mobile .dropdown > .dropdown-active {
+          display: block;
+        }
+      </style>
+
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto"><a href="index.html">PortFolio-X</a></h1>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#"
+                ><span>About</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Testimonials</a></li>
+
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Drop Down</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Case Study</a></li>
+            <li><a href="">Blog</a></li>
+
+            <li><a href="">Contact</a></li>
+            <li><a href="index.html" class="getstarted">Get Started</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+
+      <script>
+        let selectHeader = select("#header");
+        if (selectHeader) {
+          const headerScrolled = () => {
+            if (window.scrollY > 100) {
+              selectHeader.classList.add("header-scrolled");
+            } else {
+              selectHeader.classList.remove("header-scrolled");
+            }
+          };
+          window.addEventListener("load", headerScrolled);
+          onscroll(document, headerScrolled);
+        }
+
+        /**
+         * Mobile nav toggle
+         */
+        on("click", ".mobile-nav-toggle", function (e) {
+          select("#navbar").classList.toggle("navbar-mobile");
+          this.classList.toggle("bi-list");
+          this.classList.toggle("bi-x");
+        });
+
+        /**
+         * Mobile nav dropdowns activate
+         */
+        on(
+          "click",
+          ".navbar .dropdown > a",
+          function (e) {
+            if (select("#navbar").classList.contains("navbar-mobile")) {
+              e.preventDefault();
+              this.nextElementSibling.classList.toggle("dropdown-active");
+            }
+          },
+          true
+        );
+      </script>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <style>
+        #hero {
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(63, 73, 83, 0.8);
+          overflow: hidden;
+          position: relative;
+        }
+
+        #hero .carousel,
+        #hero .carousel-inner,
+        #hero .carousel-item,
+        #hero .carousel-item::before {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+        }
+
+        #hero .carousel-item {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        #hero .carousel-item::before {
+          content: "";
+          background-color: rgba(30, 35, 40, 0.6);
+        }
+
+        #hero .carousel-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+          top: 70px;
+          left: 50px;
+          right: 50px;
+        }
+
+        #hero .container {
+          text-align: center;
+        }
+
+        #hero h2 {
+          color: #fff;
+          margin-bottom: 20px;
+          font-size: 48px;
+          font-weight: 700;
+        }
+
+        #hero p {
+          animation-delay: 0.4s;
+          margin: 0 auto 30px auto;
+          color: #fff;
+        }
+
+        #hero .carousel-inner .carousel-item {
+          transition-property: opacity;
+          background-position: center top;
+        }
+
+        #hero .carousel-inner .carousel-item,
+        #hero .carousel-inner .active.carousel-item-start,
+        #hero .carousel-inner .active.carousel-item-end {
+          opacity: 0;
+        }
+
+        #hero .carousel-inner .active,
+        #hero .carousel-inner .carousel-item-next.carousel-item-start,
+        #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+          opacity: 1;
+          transition: 0.5s;
+        }
+
+        #hero .carousel-inner .carousel-item-next,
+        #hero .carousel-inner .carousel-item-prev,
+        #hero .carousel-inner .active.carousel-item-start,
+        #hero .carousel-inner .active.carousel-item-end {
+          left: 0;
+          transform: translate3d(0, 0, 0);
+        }
+
+        #hero .carousel-control-next-icon,
+        #hero .carousel-control-prev-icon {
+          background: none;
+          font-size: 30px;
+          line-height: 0;
+          width: auto;
+          height: auto;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 50px;
+          transition: 0.3s;
+          color: rgba(255, 255, 255, 0.5);
+          width: 54px;
+          height: 54px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #hero .carousel-control-next-icon:hover,
+        #hero .carousel-control-prev-icon:hover {
+          background: rgba(255, 255, 255, 0.3);
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        #hero .carousel-indicators li {
+          list-style-type: none;
+          cursor: pointer;
+          background: #fff;
+          overflow: hidden;
+          border: 0;
+          width: 12px;
+          height: 12px;
+          border-radius: 50px;
+          opacity: 0.6;
+          transition: 0.3s;
+        }
+
+        #hero .carousel-indicators li.active {
+          opacity: 1;
+          background: #d9232d;
+        }
+
+        #hero .btn-get-started {
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          letter-spacing: 1px;
+          display: inline-block;
+          padding: 14px 32px;
+          border-radius: 4px;
+          transition: 0.5s;
+          line-height: 1;
+          color: #fff;
+          animation-delay: 0.8s;
+          background: #d9232d;
+        }
+
+        #hero .btn-get-started:hover {
+          background: #df3740;
+        }
+
+        @media (max-width: 992px) {
+          #hero {
+            height: 100vh;
+          }
+
+          #hero .carousel-container {
+            top: 8px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          #hero h2 {
+            font-size: 28px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          #hero .carousel-control-prev,
+          #hero .carousel-control-next {
+            width: 5%;
+          }
+        }
+
+        @media (max-height: 500px) {
+          #hero {
+            height: 120vh;
+          }
+        }
+      </style>
+      <div
+        id="heroCarousel"
+        data-bs-interval="5000"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div
+            class="carousel-item active"
+            style="background-image: url(assets/img/slide/slide-1.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  Welcome to <span>Portofio-X</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                  et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                  mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel. Minus et tempore modi
+                  architecto.
+                </p>
+                <a
+                  href="#about"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/slide-2.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  Lorem Ipsum Dolor
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                  et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                  mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel. Minus et tempore modi
+                  architecto.
+                </p>
+                <a
+                  href="#about"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/slide-3.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  Sequi ea ut et est quaerat
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+                  et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
+                  mollitia ut. Similique ea voluptatem. Esse doloremque
+                  accusamus repellendus deleniti vel. Minus et tempore modi
+                  architecto.
+                </p>
+                <a
+                  href="#about"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bi bi-chevron-left"
+            aria-hidden="true"
+          ></span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bi bi-chevron-right"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+      <script>
+        /**
+         * Easy selector helper function
+         */
+        const select = (el, all = false) => {
+          el = el.trim();
+          if (all) {
+            return [...document.querySelectorAll(el)];
+          } else {
+            return document.querySelector(el);
+          }
+        };
+
+        /**
+         * Easy event listener function
+         */
+        const on = (type, el, listener, all = false) => {
+          let selectEl = select(el, all);
+          if (selectEl) {
+            if (all) {
+              selectEl.forEach((e) => e.addEventListener(type, listener));
+            } else {
+              selectEl.addEventListener(type, listener);
+            }
+          }
+        };
+
+        const onscroll = (el, listener) => {
+          el.addEventListener("scroll", listener);
+        };
+
+        let heroCarouselIndicators = select("#hero-carousel-indicators");
+        let heroCarouselItems = select("#heroCarousel .carousel-item", true);
+
+        heroCarouselItems.forEach((item, index) => {
+          index === 0
+            ? (heroCarouselIndicators.innerHTML +=
+                "<li data-bs-target='#heroCarousel' data-bs-slide-to='" +
+                index +
+                "' class='active'></li>")
+            : (heroCarouselIndicators.innerHTML +=
+                "<li data-bs-target='#heroCarousel' data-bs-slide-to='" +
+                index +
+                "'></li>");
+        });
+      </script>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <style>
+          .about-content {
+            box-sizing: border-box;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+          }
+
+          .about-content:hover {
+            transform: translateX(-13px) translateY(-10px);
+            box-shadow: 20px 21px 17px -17px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 20px 21px 17px -17px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 20px 21px 17px -17px rgba(0, 0, 0, 0.75);
+          }
+
+          .about-content p {
+            font-size: 16px;
+          }
+
+          .about-content a i {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+
+          .about-img img {
+            box-sizing: border-box;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+          }
+
+          .about-img img:hover {
+            transform: translateX(-13px) translateY(-10px);
+            box-shadow: 20px 21px 17px -17px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 20px 21px 17px -17px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 20px 21px 17px -17px rgba(0, 0, 0, 0.75);
+          }
+
+          .about .content h2 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+          }
+
+          .about .content h3 {
+            font-weight: 500;
+            line-height: 32px;
+            font-size: 24px;
+          }
+
+          .about .content ul {
+            list-style: none;
+            padding: 0;
+          }
+
+          .about .content ul li {
+            padding: 10px 0 0 28px;
+            position: relative;
+          }
+
+          .about .content ul i {
+            left: 0;
+            top: 7px;
+            position: absolute;
+            font-size: 20px;
+            color: #d9232d;
+          }
+
+          .about .content p:last-child {
+            margin-bottom: 0;
+          }
+        </style>
+        <div class="container">
+          <div class="row flex-row justify-content-center align-items-center">
+            <div class="col-6">
+              <div class="about-content p-4">
+                <p class="">
+                  Our team has deep expertise across all areas of digital. Need
+                  a deep dive on how to set up event tracking for a complex lead
+                  process? Want to optimize your sales pipeline using
+                  automations? We’ve got you covered. With a dedicated account
+                  manager, our clients have one go-to contact who interfaces
+                  with 500+ subject-matter experts to drive campaign results.
+                </p>
+                <a class="d-flex justify-content-end gap-2" href=""
+                  >About Us<i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="about-img">
+                <img class="w-100" src="assets/img/about/robot.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Clients Section ======= -->
+
+      <section id="clients" class="clients section-bg">
+        <h1 class="d-flex justify-content-center fw-bold mb-3">Our Partners</h1>
+        <style>
+          .clients {
+            padding: 15px 0;
+            text-align: center;
+            /* background: #f8f8f8; */
+          }
+
+          .client-logo {
+            box-sizing: border-box;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          }
+
+          .clients img {
+            max-width: 45%;
+            transition: all 0.4s ease-in-out;
+            display: inline-block;
+            padding: 15px 0;
+            filter: grayscale(100);
+          }
+
+          .clients img:hover {
+            filter: none;
+            transform: scale(1.15);
+          }
+
+          @media (max-width: 768px) {
+            .clients img {
+              max-width: 40%;
+            }
+          }
+        </style>
+        <div class="container clients">
+          <div class="row justify-content-center gap-3">
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center client-logo"
+            >
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center client-logo"
+            >
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center client-logo"
+            >
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center client-logo"
+            >
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center client-logo"
+            >
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Clients Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <style>
+          .services .icon-box {
+            margin-bottom: 20px;
+            padding: 30px;
+            border-radius: 6px;
+          }
+
+          .services .icon-box i {
+            float: left;
+            color: #d9232d;
+            font-size: 40px;
+          }
+
+          .services .icon-box h4 {
+            margin-left: 70px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+          }
+
+          .services .icon-box h4 a {
+            color: #556270;
+            transition: 0.3s;
+          }
+
+          .services .icon-box p {
+            margin-left: 70px;
+            line-height: 24px;
+            font-size: 14px;
+          }
+
+          .services .icon-box:hover h4 a {
+            color: #d9232d;
+          }
+        </style>
+        <div class="container">
+          <h1 class="d-flex justify-content-center fw-bold mb-3">
+            Our Services
+          </h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="icon-box">
+                <i class="bi bi-briefcase"></i>
+                <h4><a href="#">Web Development</a></h4>
+                <p>
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi sint occaecati cupiditate non provident
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="bi bi-card-checklist"></i>
+                <h4><a href="#">App Development</a></h4>
+                <p>
+                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat tarad limino ata
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="bi bi-bar-chart"></i>
+                <h4><a href="#">Design</a></h4>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="bi bi-binoculars"></i>
+                <h4><a href="#">SEO Marketing</a></h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="bi bi-brightness-high"></i>
+                <h4><a href="#">Facebook Marketing</a></h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="bi bi-calendar4-week"></i>
+                <h4><a href="#">Youtube Marketing</a></h4>
+                <p>
+                  Et harum quidem rerum facilis est et expedita distinctio. Nam
+                  libero tempore, cum soluta nobis est eligendi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <style>
+          .portfolio .portfolio-item {
+            margin-bottom: 30px;
+          }
+
+          .portfolio #portfolio-flters {
+            padding: 0;
+            margin: 0 auto 20px auto;
+            list-style: none;
+            text-align: center;
+          }
+
+          .portfolio #portfolio-flters li {
+            cursor: pointer;
+            display: inline-block;
+            padding: 8px 15px 10px 15px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #444444;
+            margin-bottom: 5px;
+            transition: all 0.3s ease-in-out;
+            border-radius: 3px;
+          }
+
+          .portfolio #portfolio-flters li:hover,
+          .portfolio #portfolio-flters li.filter-active {
+            color: #fff;
+            background: #d9232d;
+          }
+
+          .portfolio #portfolio-flters li:last-child {
+            margin-right: 0;
+          }
+
+          .portfolio .portfolio-wrap {
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            background: rgba(85, 98, 112, 0.6);
+          }
+
+          .portfolio .portfolio-wrap::before {
+            content: "";
+            background: rgba(85, 98, 112, 0.6);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transition: all ease-in-out 0.3s;
+            z-index: 2;
+            opacity: 0;
+          }
+
+          .portfolio .portfolio-wrap img {
+            transition: all ease-in-out 0.3s;
+          }
+
+          .portfolio .portfolio-wrap .portfolio-info {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            transition: all ease-in-out 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 20px;
+          }
+
+          .portfolio .portfolio-wrap .portfolio-info h4 {
+            font-size: 20px;
+            color: #fff;
+            font-weight: 600;
+          }
+
+          .portfolio .portfolio-wrap .portfolio-info p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0;
+            font-style: italic;
+          }
+
+          .portfolio .portfolio-wrap .portfolio-links {
+            text-align: center;
+            z-index: 4;
+          }
+
+          .portfolio .portfolio-wrap .portfolio-links a {
+            color: rgba(255, 255, 255, 0.6);
+            margin: 0 5px 0 0;
+            font-size: 28px;
+            display: inline-block;
+            transition: 0.3s;
+          }
+
+          .portfolio .portfolio-wrap .portfolio-links a:hover {
+            color: white;
+          }
+
+          .portfolio .portfolio-wrap:hover::before {
+            opacity: 1;
+          }
+
+          .portfolio .portfolio-wrap:hover img {
+            transform: scale(1.03);
+          }
+
+          .portfolio .portfolio-wrap:hover .portfolio-info {
+            opacity: 1;
+          }
+        </style>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">App</li>
+                <li data-filter=".filter-card">Design</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/fin.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/fin.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="App 1"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/fin2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/fin2.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Web 3"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/fin3.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/fin3.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="App 2"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/fin4.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Card 2</h4>
+                  <p>Card</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/fin4.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Card 2"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/fin5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Web 2</h4>
+                  <p>Web</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/fin5.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="Web 2"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/fin6.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>App</p>
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/fin6.png"
+                      data-gallery="portfolioGallery"
+                      class="portfolio-lightbox"
+                      title="App 3"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          window.addEventListener("load", () => {
+            let portfolioContainer = select(".portfolio-container");
+            if (portfolioContainer) {
+              let portfolioIsotope = new Isotope(portfolioContainer, {
+                itemSelector: ".portfolio-item",
+              });
+
+              let portfolioFilters = select("#portfolio-flters li", true);
+
+              on(
+                "click",
+                "#portfolio-flters li",
+                function (e) {
+                  e.preventDefault();
+                  portfolioFilters.forEach(function (el) {
+                    el.classList.remove("filter-active");
+                  });
+                  this.classList.add("filter-active");
+
+                  portfolioIsotope.arrange({
+                    filter: this.getAttribute("data-filter"),
+                  });
+                },
+                true
+              );
+            }
+          });
+        </script>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <section id="case-study">
+        <style>
+          .case-content p {
+            font-size: 20px;
+            font-weight: 400;
+          }
+
+          .case-content {
+            padding: 30px;
+          }
+
+          .case-content ul li {
+            line-height: 30px;
+          }
+        </style>
+        <div class="container">
+          <h1 class="d-flex justify-content-center fw-bold mb-3 mb-5">
+            Case Study
+          </h1>
+
+          <div class="row mb-5">
+            <div class="col-6">
+              <div class="">
+                <img
+                  class="w-100"
+                  src="assets/img/case-study/casesloat.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="case-content">
+                <p>Impact story</p>
+                <h2 class="fw-bold">
+                  How Offline to Online First Engagement Model Helped Our
+                  Client’s Business Achieve Expected Outcomes
+                </h2>
+                <p>Snapshot of features delivered</p>
+                <ul>
+                  <li>
+                    Remarkably improved operational efficiency by enabling
+                    synchronized order placement from a single system(POS)
+                  </li>
+                  <li>
+                    Remarkably improved operational efficiency by enabling
+                    synchronized order placement from a single system(POS)
+                  </li>
+                  <li>
+                    Remarkably improved operational efficiency by enabling
+                    synchronized order placement from a single system(POS)
+                  </li>
+                </ul>
+                <a href=""
+                  >View Case Study
+                  <i class="fa-solid fa-arrow-right fa-beat-fade"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-6">
+              <div class="case-content">
+                <p>Procurenet</p>
+                <h2 class="fw-bold">
+                  Revolutionizing the Global B2B Healthcare Supply Chain: A
+                  Groundbreaking Venture by Gurbaksh Chahal
+                </h2>
+                <p>Snapshot of features delivered</p>
+                <ul>
+                  <li>
+                    RStreamlined document exchange and repository maintenance
+                    for more than 600K Products
+                  </li>
+                  <li>
+                    RStreamlined document exchange and repository maintenance
+                    for more than 600K Products
+                  </li>
+                  <li>
+                    RStreamlined document exchange and repository maintenance
+                    for more than 600K Products
+                  </li>
+                  <li>
+                    RStreamlined document exchange and repository maintenance
+                    for more than 600K Products
+                  </li>
+                </ul>
+                <a href=""
+                  >View Case Study
+                  <i class="fa-solid fa-arrow-right fa-beat-fade"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="">
+                <img
+                  class="w-100"
+                  src="assets/img/case-study/procurenet-page.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <style>
+          @keyframes slide {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-100%);
+            }
+          }
+
+          .logos {
+            overflow: hidden;
+            padding: 60px 0;
+            background: white;
+            white-space: nowrap;
+            position: relative;
+          }
+
+          .logos:before,
+          .logos:after {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            content: "";
+            z-index: 2;
+          }
+
+          .logos:before {
+            left: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+          }
+
+          .logos:after {
+            right: 0;
+            background: linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0),
+              white
+            );
+          }
+
+          .logos:hover .logos-slide {
+            animation-play-state: paused;
+          }
+
+          .logos-slide {
+            display: inline-block;
+            animation: 35s slide infinite linear;
+          }
+
+          .logos-slide img {
+            height: 50px;
+            margin: 0 40px;
+          }
+        </style>
+        <div class="container">
+          <h1 class="d-flex justify-content-center fw-bold mb-3 mb-5">
+            Certifications
+          </h1>
+
+          <div class="logos">
+            <div class="logos-slide">
+              <img src="assets/img/logos/3m.svg" />
+              <img src="assets/img/logos/barstool-store.svg" />
+              <img src="assets/img/logos/budweiser.svg" />
+              <img src="assets/img/logos/buzzfeed.svg" />
+              <img src="assets/img/logos/forbes.svg" />
+              <img src="assets/img/logos/macys.svg" />
+              <img src="assets/img/logos/menshealth.svg" />
+              <img src="assets/img/logos/mrbeast.svg" />
+            </div>
+          </div>
+
+          <script>
+            var copy = document.querySelector(".logos-slide").cloneNode(true);
+            document.querySelector(".logos").appendChild(copy);
+          </script>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="container">
+          <h1 class="d-flex justify-content-center fw-bold mb-3 mb-5">
+            Our Team
+          </h1>
+          <div
+            id="carouselExample"
+            class="carousel slide position-relative"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row flex-row justify-content-center gap-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row flex-row justify-content-center gap-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row flex-row justify-content-center gap-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="assets/img/mehu.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">MS Mehu</h5>
+                      <p class="card-text">Marketing Manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev position-absolute"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <i
+                class="fa-solid fa-arrow-right fa-rotate-180 fa-xl"
+                style="color: #000000"
+              ></i>
+              <span class="visually-hidden">prev</span>
+            </button>
+            <button
+              class="carousel-control-next position-absolute"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <i
+                class="fa-solid fa-arrow-right fa-xl"
+                style="color: #000000"
+              ></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <style>
+          .contact .info {
+            width: 100%;
+            background: #fff;
+          }
+
+          .contact .info i {
+            font-size: 20px;
+            color: #556270;
+            float: left;
+            width: 44px;
+            height: 44px;
+            background: #edeff1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .contact .info h4 {
+            padding: 0 0 0 60px;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #556270;
+          }
+
+          .contact .info p {
+            padding: 0 0 0 60px;
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #8795a4;
+          }
+
+          .contact .info .email,
+          .contact .info .phone {
+            margin-top: 40px;
+          }
+
+          .contact .info .email:hover i,
+          .contact .info .address:hover i,
+          .contact .info .phone:hover i {
+            background: #556270;
+            color: #fff;
+          }
+
+          .contact .php-email-form {
+            width: 100%;
+            background: #fff;
+          }
+
+          .contact .php-email-form .form-group {
+            padding-bottom: 8px;
+          }
+
+          .contact .php-email-form .error-message {
+            display: none;
+            color: #fff;
+            background: #ed3c0d;
+            text-align: left;
+            padding: 15px;
+            font-weight: 600;
+          }
+
+          .contact .php-email-form .error-message br + br {
+            margin-top: 25px;
+          }
+
+          .contact .php-email-form .sent-message {
+            display: none;
+            color: #fff;
+            background: #18d26e;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+          }
+
+          .contact .php-email-form .loading {
+            display: none;
+            background: #fff;
+            text-align: center;
+            padding: 15px;
+          }
+
+          .contact .php-email-form .loading:before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            margin: 0 10px -6px 0;
+            border: 3px solid #18d26e;
+            border-top-color: #eee;
+            animation: animate-loading 1s linear infinite;
+          }
+
+          .contact .php-email-form input,
+          .contact .php-email-form textarea {
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+            border-radius: 4px;
+          }
+
+          .contact .php-email-form input:focus,
+          .contact .php-email-form textarea:focus {
+            border-color: #d9232d;
+          }
+
+          .contact .php-email-form input {
+            height: 44px;
+          }
+
+          .contact .php-email-form textarea {
+            padding: 10px 12px;
+          }
+
+          .contact .php-email-form button[type="submit"] {
+            background: #d9232d;
+            border: 0;
+            padding: 10px 24px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 4px;
+          }
+
+          .contact .php-email-form button[type="submit"]:hover {
+            background: #e24d55;
+          }
+
+          @keyframes animate-loading {
+            0% {
+              transform: rotate(0deg);
+            }
+
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
+        <div class="container">
+          <h1 class="d-flex justify-content-center fw-bold mb-5">Contact Us</h1>
+          <div>
+            <iframe
+              style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55s</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <style>
+        #footer {
+          background: #4a5562;
+          padding: 0 0 30px 0;
+          color: #fff;
+          font-size: 14px;
+        }
+
+        #footer .footer-top {
+          background: #515d6a;
+          padding: 60px 0 30px 0;
+        }
+
+        #footer .footer-top .footer-info {
+          margin-bottom: 30px;
+        }
+
+        #footer .footer-top .footer-info h3 {
+          font-size: 24px;
+          margin: 0 0 20px 0;
+          padding: 2px 0 2px 0;
+          line-height: 1;
+          font-weight: 700;
+        }
+
+        #footer .footer-top .footer-info p {
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 0;
+          font-family: "Raleway", sans-serif;
+          color: #fff;
+        }
+
+        #footer .footer-top .social-links a {
+          font-size: 18px;
+          display: inline-block;
+          background: rgba(255, 255, 255, 0.1);
+          color: #fff;
+          line-height: 1;
+          padding: 8px 0;
+          margin-right: 4px;
+          border-radius: 4px;
+          text-align: center;
+          width: 36px;
+          height: 36px;
+          transition: 0.3s;
+        }
+
+        #footer .footer-top .social-links a:hover {
+          background: #d9232d;
+          color: #fff;
+          text-decoration: none;
+        }
+
+        #footer .footer-top h4 {
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+          position: relative;
+          padding-bottom: 12px;
+        }
+
+        #footer .footer-top .footer-links {
+          margin-bottom: 30px;
+        }
+
+        #footer .footer-top .footer-links ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        #footer .footer-top .footer-links ul i {
+          padding-right: 2px;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 18px;
+          line-height: 1;
+        }
+
+        #footer .footer-top .footer-links ul li {
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+        }
+
+        #footer .footer-top .footer-links ul li:first-child {
+          padding-top: 0;
+        }
+
+        #footer .footer-top .footer-links ul a {
+          color: rgba(255, 255, 255, 0.6);
+          transition: 0.3s;
+          display: inline-block;
+          line-height: 1;
+        }
+
+        #footer .footer-top .footer-links ul a:hover {
+          color: white;
+        }
+
+        #footer .footer-top .footer-newsletter form {
+          margin-top: 30px;
+          background: #fff;
+          padding: 6px 10px;
+          position: relative;
+          border-radius: 4px;
+        }
+
+        #footer .footer-top .footer-newsletter form input[type="email"] {
+          border: 0;
+          padding: 4px;
+          width: calc(100% - 110px);
+        }
+
+        #footer .footer-top .footer-newsletter form input[type="submit"] {
+          position: absolute;
+          top: 0;
+          right: -2px;
+          bottom: 0;
+          border: 0;
+          background: none;
+          font-size: 16px;
+          padding: 0 20px 2px 20px;
+          background: #d9232d;
+          color: #fff;
+          transition: 0.3s;
+          border-radius: 0 4px 4px 0;
+        }
+
+        #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+          background: #df3740;
+        }
+
+        #footer .copyright {
+          text-align: center;
+          padding-top: 30px;
+        }
+
+        #footer .credits {
+          padding-top: 10px;
+          text-align: center;
+          font-size: 13px;
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        #footer .credits a {
+          color: rgba(255, 255, 255, 0.6);
+          transition: 0.3s;
+          font-weight: 600;
+        }
+
+        #footer .credits a:hover {
+          color: white;
+        }
+
+        #team .carousel-control-prev {
+          left: -84px;
+        }
+
+        #team .carousel-control-next {
+          right: -84px;
+        }
+
+        #team .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          background: red;
+        }
+      </style>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>PortFolio-X</h3>
+                <p>
+                  A108 Adam Street <br />
+                  NY 535022, USA<br /><br />
+                  <strong>Phone:</strong> +1 5589 55488 55<br />
+                  <strong>Email:</strong> info@example.com<br />
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>PortFolio-X</span></strong> All Rights
+          Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
